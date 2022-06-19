@@ -1,0 +1,102 @@
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(45deg,rgba(102, 58, 163, 0.77),rgba(244,67,2,0.562));
+    overflow: hidden;
+}
+.section_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem;
+}
+.section_img img{
+    margin-top: 1rem;
+    width: 520px;
+    height: 600px;
+    object-fit: cover;
+    padding: 10px;
+}
+.section_content{
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+}
+.section_content h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 55px;
+    margin-bottom: 2.125rem;
+}
+.section_content p{
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 1px solid gold;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px gold;
+    padding: 6px;
+    margin-block: 7px;
+}
+.section_content p:hover{
+    transform: scale(110%);
+    transition: 250ms;
+    color: red;
+}
+@media(max-width:1100px){
+    .section_container{
+        flex-direction: column;
+        margin: 2.5rem;
+    }
+        
+    .section_container h1{
+            font-size:25px;
+            margin: 0rem;
+        }
+
+        .section_container p{
+            font-size: 25px;
+            margin-block: 25px;
+            padding: 25px;
+            font-weight: normal;
+        }
+    }
+
+
+    .section_img img{
+        width: 500px;
+        height: 700px;
+        padding: 0px;
+    }
+
+
+    @media(max-width:735px){
+        .section_img img{
+            width: 300px;
+            height: 350px;
+        }
+        .section_container{
+            margin: 1rem;
+        }
+        .section_container p{
+            font-size: 10px;
+            padding: 4px;
+        }
+    }
+    @media (max-width:335px){
+        .section_container{
+            margin: 0;
+        }
+        .section_container h1{
+            font-size: 20px;
+            margin-bottom: 0rem;
+        }
+        .section_container p{
+            white-space: nowrap;
+            font-size: 12px;
+            margin-block: 0px;
+            padding: 0px;
+        }
+        
+        
+    }

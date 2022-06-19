@@ -1,0 +1,48 @@
+.works{
+  min-height: 100vh;
+  width: 100%;
+}
+
+.work_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+
+}
+.cards{
+  position: relative;
+  cursor: pointer;
+  border: 3px solid grey;
+}
+.cards img {
+  height: 100%;
+  width:100% ;
+}
+.cards button{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: transparent;
+  border: 3px solid white;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  opacity: 0;
+
+}
+.cards button:hover{
+  background: white;
+  color: red;
+}
+.cards:hover button{
+  opacity: 1;
+  transition: 500ms;
+}
+.cards:hover img{
+  opacity: 0.6;
+}
